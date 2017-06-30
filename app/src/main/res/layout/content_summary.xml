@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="21dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop"
+            android:layout_marginBottom="@dimen/marginbottom"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/layout_view_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize"
+                android:text="@string/currentweight" />
+            <EditText
+                android:id="@+id/current_weight"
+                android:layout_width="@dimen/layout_view_width"
+                android:hint="@string/in_kgs"
+                android:enabled="false"
+                android:inputType="number"
+                style="@style/editext_style"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop"
+            android:layout_marginBottom="@dimen/margintop"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/layout_view_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize"
+                android:text="@string/weight_lost_to_date"/>
+            <EditText
+                android:id="@+id/weight_lost_to_date"
+                android:layout_width="@dimen/layout_view_width"
+                android:inputType="date"
+                android:enabled="false"
+                style="@style/editext_style"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintop"
+            android:layout_marginBottom="@dimen/margintop"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/layout_view_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize"
+                android:text="@string/weekly_weight_loss"/>
+            <EditText
+                android:id="@+id/weight_lost_weekly"
+                android:layout_width="@dimen/layout_view_width"
+                android:enabled="false"
+                style="@style/editext_style"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margintop"
+            android:layout_marginBottom="@dimen/margintop"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/layout_view_width"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize"
+                android:text="@string/body_mass_index"/>
+
+            <EditText
+                android:id="@+id/bmi"
+                android:layout_width="@dimen/layout_view_width"
+                android:enabled="false"
+                style="@style/editext_style"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <include
+        layout="@layout/display"
+
+        />
+    <include
+        layout="@layout/bottom" />
+</LinearLayout>

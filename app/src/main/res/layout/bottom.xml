@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="-7dp"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/summary"
+            android:text="@string/summary"
+            android:textSize="@dimen/bottom_bar_textsize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingTop="0pt" android:paddingBottom="0pt"
+            android:padding="0pt" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_marginLeft="-2.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/settings"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/settings"
+            android:textSize="@dimen/bottom_bar_textsize"
+            android:paddingTop="0pt" android:paddingBottom="0pt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_marginLeft="-5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/weightentry_details"
+            android:text="@string/entry"
+            android:textStyle="bold"
+            android:textSize="@dimen/bottom_bar_textsize"
+            android:textColor="@color/black"
+            android:paddingTop="0pt" android:paddingBottom="0pt"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_marginRight="-4.5dp"
+            android:layout_marginLeft="-2.5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/history"
+            android:text="@string/history"
+            android:textStyle="bold"
+            android:textSize="@dimen/bottom_bar_textsize"
+            android:textColor="@color/black"
+            android:paddingTop="0pt" android:paddingBottom="0pt"/>
+    </LinearLayout>
+
+</LinearLayout>

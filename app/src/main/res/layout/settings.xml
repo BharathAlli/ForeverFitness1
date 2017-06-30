@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".summary"
+    android:orientation="horizontal"
+    android:background="@drawable/oo">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/Name"
+                    android:layout_width="@dimen/layout_view_width"
+                    android:inputType="text"
+                    style="@style/editext_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/beginningweight" />
+
+                <EditText
+                    android:id="@+id/beginningweight"
+                    android:hint="@string/in_kgs"
+                    android:layout_width="@dimen/layout_view_width"
+                    android:inputType="number"
+                    style="@style/editext_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/height" />
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="@dimen/layout_view_width"
+                    android:hint="@string/in_Cms"
+                    android:inputType="numberDecimal"
+                    style="@style/editext_style"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/gender" />
+                <RadioGroup
+                    android:id="@+id/myRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:id="@+id/rbtn_male" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:id="@+id/rbtn_female" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/targeted_goal_weight" />
+
+                <EditText
+                    android:id="@+id/targeted_weight"
+                    android:layout_width="@dimen/layout_view_width"
+                    android:inputType="number"
+                    android:textAppearance="@color/white"
+                    style="@style/editext_style"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margintopsettings"
+                android:layout_marginBottom="@dimen/margintopsettings"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/textview_width"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textsize"
+                    android:text="@string/targeted_goal_date" />
+                <EditText
+                    android:id="@+id/targeted_date"
+                    android:layout_width="@dimen/layout_view_width"
+                    android:inputType="date"
+                    style="@style/editext_style"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:weightSum="2">
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SaveButton"
+                android:onClick="saveButton"
+                android:textSize="@dimen/bottom_bar_textsize"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/editbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:onClick="editButton"
+                android:textSize="@dimen/bottom_bar_textsize"
+                android:text="@string/EditButton"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

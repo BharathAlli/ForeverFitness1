@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Forever Fitness</string>
+    <string name="action_settings">Settings</string>
+    <string name="entry">Entry</string>
+    <string name="history">History</string>
+    <string name="action_home">home</string>
+    <string name="tvdate">Date</string>
+    <string name="weight">Weight</string>
+    <string name="loss">Loss</string>
+    <string name="beginningweight">Beginning weight</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="targeted_weight">Targeted weight :</string>
+    <string name="targeted_date">Targeted date :</string>
+    <string name="savedata">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="summary">summary</string>
+    <string name="settings">settings</string>
+    <string name="weekly_weight_loss">Weekly Weight loss Avg</string>
+    <string name="weight_lost_to_date">Weight lost-date</string>
+    <string name="current_weight">Current Weight</string>
+    <string name="body_mass_index">BMI</string>
+    <string name="currentweight">Current Weight</string>
+    <string name="date_entry">Date</string>
+    <string name="Pic">Profile Pic</string>
+    <string name="take_pic">Take Photo</string>
+    <string name="SaveButton">SAVE</string>
+    <string name="EditButton">EDIT</string>
+    <string name="targeted_goal_weight">Target Goal Weight</string>
+    <string name="targeted_goal_date">Target Goal Date</string>
+    <string name="name">Person Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="weightLabel">weight</string>
+    <string name="heightLabel">Height</string>
+    <string name="in_kgs">IN KGs</string>
+    <string name="hi_welcome_to_the_page">Hi Welcome! to Fitness Application</string>
+    <string name="in_Cms">CMS</string>
+    <string-array name="heightUnitsArray">
+        <item >feet/inch</item>
+        <item >m/cm</item>
+    </string-array>
+    <string-array name="weightUnitsArray">
+        <item >lb</item>
+        <item >kg</item>
+    </string-array>
+
+</resources>

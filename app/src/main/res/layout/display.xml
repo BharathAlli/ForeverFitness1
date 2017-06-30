@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+    android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+    android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                style="@style/shadow"
+                android:text="@string/hi_welcome_to_the_page"
+               />
+
+    </LinearLayout>
+
+
+
+
